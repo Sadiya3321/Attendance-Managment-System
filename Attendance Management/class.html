@@ -1,0 +1,120 @@
+ 
+ <!doctype html>
+
+<html lang="en">
+
+<head>
+       <meta charset="utf-8"/>
+
+       <script src="validclass.js"> </script>  
+</head>
+
+
+
+<style>
+body {
+	background-image:  url('http://localhost/bgimage.jpg');
+	background-repeat:  no-repeat;
+  background-attachment:  fixed;
+  background-size:  100% 100%;
+}
+.top-box {
+ 
+    margin: 0;
+    padding: 0;
+}
+.top-box h1{
+    margin:0;
+}
+</style>
+<body>
+<center>
+<div class="top-box">
+<h1 style="color:black;font-family:verdona; font-size:80px;">CLASS</h1></div>
+<form name="f" method="POST" onsubmit="return validclass()"  action="http://localhost/class.php">
+<table style="background-color:white;border:2px solid black;height:400px;width:350px; margin:5px; padding:1px">
+
+<tr>
+
+<th>Class:</th>
+
+<td><select  id="classlist" name="class">
+		<option value="none">---Select---</option>
+		<option value="FYBSC">FYBSC</option>
+		<option value="SYBSC">SYBSC</option>
+		<option value="TYBSC">TYBSC</option>
+		<option value="MSC1">MSC1</option>
+		<option value="MSC2">MSC2</option></td>
+
+</tr>
+
+<tr>
+
+<th>Semester</th>
+
+<td><input type=radio name=s value="1" id="sem1">1
+	<input type=radio name=s  value="2" id="sem2">2</td>
+
+</tr>
+
+<tr>
+
+<th>Type</th>
+
+<td><input type=radio name=t  value="1" id="th">Theory
+	<input type=radio name=t  value="2" id="pr">Practical</td>
+
+</tr>
+
+<tr>
+
+<th>Subject</th>
+
+<td><select  id="sublist" name="sub">
+		<option value="none">---Select---</option>
+		<option value="Computer">Computer</option>
+		<option value="Mathematics">Mathematics</option>
+		<option value="Statistics">Statistics</option>
+		<option value="Electronics">Electronics</option>
+		<option value="English">English</option>
+		<option value="Evs">Evs</option>
+		<option value="CN">Computer-Networks</option>
+		<option value="IP">Internet-Programming</option>
+		<option value="OS">Operating-System</option>
+		<option value="TCS">TCS</option>
+		<option value="Java">Java</option>
+		<option value="OOSE">OOSE</option>
+		<select></td>
+</tr>
+<tr>
+<th>Date</th>
+<td><input type=date  name=date22 id=d></td>
+</tr>
+
+<tr>
+
+<th>Paper</th>
+
+<td><input type=radio name=p  value="1" id="p1">1
+	<input type=radio name=p value="2" id="p2">2</td>
+
+</tr>
+
+<tr>
+
+
+
+
+<td colspan="2" align="center"><input type="submit" value="Next"/>
+</td>
+
+</tr>
+
+</table>
+
+</form>
+</center>
+
+</body>
+
+</html>

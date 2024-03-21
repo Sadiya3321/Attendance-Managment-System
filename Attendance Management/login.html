@@ -1,0 +1,104 @@
+ <!doctype html>
+
+<html lang="en">
+
+<head>
+       <meta charset="utf-8"/>
+
+<script src="validlogin.js">
+</script>
+</head>
+
+<style>
+body {
+	background-image:  url('http://localhost/bgimage.jpg');
+	background-repeat:  no-repeat;
+  background-attachment:  fixed;
+  background-size:  100% 100%;
+}
+.top-box {
+ 
+    margin: 0;
+    padding: 0;
+}
+.top-box h1{
+    margin:0;
+}
+
+
+</style>
+
+<body>
+<center>
+<div class="top-box">
+<image src="http://localhost/logo.jpg">
+<h1 style="color:black;font-family:verdona; font-size:80px;">LOGIN</h1></div>
+
+<form name="f" method="post" action="http://localhost/login.php" onsubmit="return validate()"  >
+
+<table  style="background-color:white;border:2px solid black;height:300px;width:350px; margin:1px; padding:0px">
+
+
+
+<tr>
+
+<th>Login-As</th>
+
+<td><input type="radio" name="r" value="1" id="t">Teacher<br>
+<input type="radio" name="r" value="2" id="a">Administrator
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<th> UserName</th>
+
+<td><input type="text" name="un" id="un1" maxlength="15" title="enter your user name" placeholder="UserName Required"/></td>
+
+</tr>
+
+<tr>
+
+<th>Password</th>
+
+<td><input type="password" name="p" id="p1" maxlength="10" title="enter your pwd" placeholder="Password Required"/></td>
+
+</tr>
+
+
+<tr>
+
+<th>Confirm Password</th>
+
+<td><input type="password"  name="rpw" id="rpw1" maxlength="10" title="re-enter your pwd" placeholder=" Confirm Password "/></td>
+
+</tr>
+
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Login" />
+
+</td>
+<tr>
+<td colspan="2" align="center">
+<p>
+OR
+</p>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<a href="http://localhost/register.html">Register</a>
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+
+</html>

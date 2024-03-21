@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+body {
+	background-image:  url('http://localhost/bgimage.jpg');
+	background-repeat:  no-repeat;
+  background-attachment:  fixed;
+  background-size:  100% 100%;
+}
+.top-box {
+ 
+    margin: 0;
+    padding: 0;
+}
+.top-box h1{
+    margin:0;
+}
+th
+{
+	font-size:30;
+}
+
+
+</style>
+</head>
+
+
+<body>
+<center>
+<div class="top-box">
+
+<h1 style="color:black;font-family:verdona; font-size:80px;">DETAILS</h1></div>
+
+<form name=f method=post action="http://localhost/adddetails.php">
+<center>
+<table  style="background-color:white;border:2px solid black;height:500px;width:450px; margin:1px; padding:0px">
+
+<tr><td colspan=2 align="center"><h1><input type=radio name=r value="1">Add Details</h1></td></tr>
+<tr><th>RollNo:</th><td><input type=text name=t1></td></tr>
+<tr><th>Name:</th><td><input type=text name=t2></td></tr>
+<tr><th>Class:</th><td><input type=text name=t3></td></tr>
+
+<tr><td colspan=2 align="center"><h1><input type=radio name=r value="2">Delete Details</h1></td></tr>
+<tr><th>RollNo:</th><td><input type=text name=t4></td></tr>
+<tr><th>Name:</th><td><input type=text name=t5></td></tr>
+<tr><th>Class:</th><td><input type=text name=t6></td></tr>
+
+<tr><td colspan=3 align="center"><input type=submit value=OK></td></tr>
+<tr><td colspan=3 align="center"><h1>OR</h1></td></tr>
+<tr><td colspan=3 align="center">
+<a href="http://localhost/report.html">ViewReport</a></td></tr>
+</table>
+</form>
+</center>
+</body>
+</html>

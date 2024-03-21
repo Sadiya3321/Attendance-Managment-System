@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+       <meta charset="utf-8"/>
+
+<script src="validreport.js">
+</script>
+
+<style>
+body {
+	background-image:  url('http://localhost/bgimage.jpg');
+	background-repeat:  no-repeat;
+  background-attachment:  fixed;
+  background-size:  100% 100%;
+}
+.top-box {
+ 
+    margin: 0;
+    padding: 0;
+}
+.top-box h1{
+    margin:0;
+}
+h1{
+color:black;
+font-family:verdona;
+ font-size:80px;
+}
+
+table
+{background-color:white;
+border:2px solid black;
+height:300px;
+width:400px;
+ margin:1px;
+ padding:0px; cellspacing=0;
+cellpadding=0;
+}
+td
+{
+font-size:40px;
+}
+th
+{
+font-size:30px;
+}
+
+
+</style>
+</head>
+
+
+<body>
+<center>
+<div class=top-box>
+<h1 style=color:black;font-family:verdona; font-size:200px;>REPORT</h1>
+</div>
+<form name="ff" method="post"  action="http://localhost/report.php"  onsubmit="return report()" >
+<table >
+
+<tr><th>Date</th>
+<td><input type="date" name="d2"  id="d2">
+</td>
+</tr>
+<tr>
+<th>Subject
+</th>
+<td><select  id="sublist" name="sub" >
+		<option value=none>---Select---</option>
+		<option value=Computer>Computer</option>
+		<option value=Mathematics>Mathematics</option>
+		<option value=Statistics>Statistics</option>
+		<option value=Electronics>Electronics</option>
+		<option value=English>English</option>
+		<option value=Evs>Evs</option>
+		<option value=CN>Computer-Networks</option>
+		<option value=IP>Internet-Programming</option>
+		<option value=OS>Operating-System</option>
+		<option value=TCS>TCS</option>
+		<option value=Java>Java</option>
+		<option value=OOSE>OOSE</option>
+		
+	
+</select>
+</td>
+</tr>
+<tr>
+
+<th>Class</th>
+
+<td><select  id="classlist" name="class" >
+		<option value=none>---Select---</option>
+		<option value=FYBSC>FYBSC</option>
+		<option value=SYBSC>SYBSC</option>
+		<option value=TYBSC>TYBSC</option>
+		<option value=MSC1>MSC1</option>
+		<option value=MSC2>MSC2</option></td>
+
+
+</select>
+
+</tr>
+<tr>
+
+<td colspan=2 align=center><input type="submit"  value="CHECK REPORT"></td>
+</tr>
+</form>
+</center>
+</body>
+</html>
+
+
+
+
+

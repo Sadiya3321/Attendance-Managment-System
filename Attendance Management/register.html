@@ -1,0 +1,154 @@
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+       <meta charset="utf-8"/>
+
+       <script src="validation1.js"> </script>  
+</head>
+
+
+<style>
+body {
+	background-image:  url('http://localhost/bgimage.jpg');
+	background-repeat:  no-repeat;
+  background-attachment:  fixed;
+  background-size:  100% 100%;
+}
+.top-box {
+ 
+    margin: 0;
+    padding: 0;
+}
+.top-box h1{
+    margin:0;
+}
+
+</style>
+
+
+<body>
+<center>
+<div class="top-box">
+<h1 style="color:black;font-family:verdona; font-size:60px;">REGISTRATION FORM</h1></div>
+
+<form name="f" method="post" action="http://localhost/register.php " onsubmit="return valid()">
+
+
+
+<table style="background-color:white;border:2px solid black;height:500px;width:450px; margin:5px; padding:1px">
+
+
+
+
+
+<tr>
+
+<th>First Name</th>
+
+<td><input type="text" name="fn" id="fn1" maxlength="20" title="enter your first name" placeholder="First Name Required"/></td>
+
+</tr>
+
+
+
+<tr>
+
+<th>Last Name</th>
+
+<td><input type="text" name="ln" id="ln1" maxlength="20" title="enter your last name" placeholder="Last Name Required"/></td>
+
+</tr>
+<tr>
+
+<th>User Name</th>
+
+<td><input type="text" name="un" id="un1" maxlength="15" title="enter your user name" placeholder="User Name Required"/></td>
+
+</tr>
+
+<tr>
+
+<th>Password</th>
+
+<td><input type="password" name="pw" id="pw1" maxlength="10" title="enter your pwd" placeholder="Password Required"/></td>
+
+</tr>
+
+<tr>
+
+<th>Confirm Password</th>
+
+<td><input type="password"  name="rpw" id="rpw1" maxlength="10" title="re-enter your pwd" placeholder="Password Required"/></td>
+
+</tr>
+
+<tr>
+
+<th>Email</th>
+
+<td><input type="email" name="e" id="e1"  title="enter your mail" placeholder="Email Required"/></td>
+
+</tr>
+
+<tr>
+
+<th>Mobile Number</th>
+
+<td><input  type="number" name="n"  id="n1" maxlength="10" title="enter your no" placeholder="Number Required"/></td>
+
+</tr>
+
+<tr>
+
+<th>Address</th>
+
+<td><textarea rows="8" cols="20" name="add" id="add1" title="enter your address" placeholder="Address Required"/></textarea></td>
+
+</tr>
+
+<tr>
+
+
+
+
+
+
+
+
+
+
+<td colspan="2" align="center">
+<input type="submit" value="OK"/>
+<input type="reset" value="Reset"/>
+</td>
+
+</tr>
+
+</table>
+
+</form>
+</center>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
